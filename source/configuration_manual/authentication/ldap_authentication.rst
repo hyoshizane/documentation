@@ -4,7 +4,7 @@
 LDAP Authentication
 =========================
 
-See http://wiki.dovecot.org/AuthDatabase/LDAP for more details.
+See :ref:`LDAP <authentication-ldap>` for more details.
 
 .. code-block:: none
 
