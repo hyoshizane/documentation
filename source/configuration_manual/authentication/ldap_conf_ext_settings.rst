@@ -23,7 +23,7 @@ Set yes to use authentication binding for verifying password's validity.
 This works by logging into LDAP server using the username and password given by client.
 The :ref:`ldap_conf_ext_setting-pass_filter` is used to find the DN for
 the user. Note that the pass_attrs is still used, only the password field
-s ignored in it. Before doing any search, the binding is switched back
+is ignored in it. Before doing any search, the binding is switched back
 to the default DN.
 
 .. note::
