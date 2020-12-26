@@ -76,7 +76,8 @@ Variable Long name      Description
 %u       %{user}        username
 %n       %{username}    user part in user@domain, same as %u if there's no domain
 %d       %{domain}      domain part in user@domain, empty if user there's no domain
-N/A      %{scriptname}  name of the Sieve script
+N/A      %{home}        user's home directory
+N/A      %{name}        name of the Sieve script
 ======== =============  ==================================================================
 
 .. _pigeonhole_ldap-sieve_ldap_script_attr:
