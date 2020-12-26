@@ -358,69 +358,6 @@ SASL realm to use.
 This specifies the search scope.
 
 
-.. _ldap_conf_ext_setting-sieve_ldap_filter:
-
-``sieve_ldap_filter``
----------------------
-
-- Default: ``(&(objectClass=posixAccount)(uid=%u))``
-- Values:  :ref:`string`
-
-Filter for user lookup used in the sieve ldap query.
-Some variables can be used:
-
-======== =============  ==================================================================
-Variable Long name      Description
-======== =============  ==================================================================
-%u       %{user}        username
-%n       %{username}    user part in user@domain, same as %u if there's no domain
-%d       %{domain}      domain part in user@domain, empty if user there's no domain
-N/A      %{scriptname}  name of the Sieve script
-======== =============  ==================================================================
-
-Example:
-
-.. code-block:: none
-
-   sieve_ldap_filter = (&(objectClass=posixAccount)(uid=%u))
-
-
-.. _ldap_conf_ext_setting-sieve_ldap_script_attr:
-
-``sieve_ldap_script_attr``
---------------------------
-
-- Default: ``mailSieveRuleSource``
-- Values:  :ref:`string`
-
-Attribute containing the Sieve script.
-Used in the sieve script from ldap.
-
-
-Example:
-
-.. code-block:: none
-
-   sieve_ldap_script_attr = mailSieveRuleSource
-
-
-.. _ldap_conf_ext_setting-sieve_ldap_mod_attr:
-
-``sieve_ldap_mod_attr``
------------------------
-
-- Default: ``modifyTimestamp``
-- Values:  :ref:`string`
-
-Attribute used for modification tracking
-
-Example:
-
-.. code-block:: none
-
-   sieve_ldap_mod_attr = modifyTimestamp
-
-
 .. _ldap_conf_ext_setting-tls:
 
 ``tls``
