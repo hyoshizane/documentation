@@ -485,7 +485,7 @@ Example:
 Filter for user lookup (userdb lookup). 
 See also :ref:`authentication-ldap_backend_configuration`
 
-Variables can be used.
+Below variables can be used.
 
 ======== =============  ================================================================
 Variable Long name      Description
