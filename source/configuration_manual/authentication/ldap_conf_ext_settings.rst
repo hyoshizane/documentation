@@ -163,7 +163,7 @@ See :ref:`authentication-password_schemes` for a list of supported schemes.
 ---------
 
 - Default: ``never``
-- Values:  ``never, searching, finding, always``
+- Values:  ``never``, ``searching``, ``finding``, ``always``
 
 Specify dereference which is set as an LDAP option.
 
